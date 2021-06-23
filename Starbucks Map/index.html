@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
+    <style>
+      body, html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+      }
+      .map {
+        height: 100vh;
+        width: 100%;
+      }
+      .map-controllers {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+      }
+    </style>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.4.0/turf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    <title>Starbucks Map</title>
+  </head>
+  <body>
+    <div class="map-controllers">
+      <select id="countrySelect">
+        <option value="All">- All -</option>
+      </select>
+    </div>
+    <div id="map" class="map"></div>
+    <script type="text/javascript" src = "index.js">    </script>
+  </body>
+</html>
